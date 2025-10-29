@@ -1,6 +1,7 @@
 # Entornos Virtuales
 # --------------------
 # Ignora el directorio del entorno virtual
+.venv/
 .env/
 
 # Directorios Generales
