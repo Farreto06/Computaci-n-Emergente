@@ -68,7 +68,7 @@ Para ejecutar un proyecto o notebook específico, navega a su directorio corresp
 | Farrauto José   | 30.696.288 | Farreto06  |
 | Torres Kenny    | 30.337.133 |            |
 | Castillo Jesus  | xx.xxx.xxx | Spotito    |
-| Manrique Victor | 24.904.163 | lVictor80l |
+| Marcano Victor | 30.747.077 | lVictor80l |
 
 ## 🎓 Información de la Asignatura
 Universidad José Antonio Páez
