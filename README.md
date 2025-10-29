@@ -63,12 +63,13 @@ Para ejecutar un proyecto o notebook específico, navega a su directorio corresp
 
 ## 👨‍💻 Integrantes del Grupo
 
-| Nombre          | C.I.       | User       |
-| --------------- | ---------- | ---------- |
-| Farrauto José   | 30.696.288 | Farreto06  |
-| Torres Kenny    | 30.337.133 |            |
-| Castillo Jesus  | xx.xxx.xxx | Spotito    |
-| Marcano Victor | 30.747.077 | lVictor80l |
+| Nombre          | C.I.       | User          |
+| --------------- | ---------- | ------------- |
+| Farrauto José   | 30.696.288 | Farreto06     |
+| Torres Kenny    | 30.337.133 | KennyTorres20 |
+| D´Ambrosio      | 30.641.266 | angelox342 |
+| Manrique Victor | 30.747.077 | lVictor80l |
+| Panitz Fernando | 30.318.272 |  |
 
 ## 🎓 Información de la Asignatura
 Universidad José Antonio Páez
@@ -77,6 +78,6 @@ Facultad de Ingenieria
 
 Carrera: Ing. de Computación
 
-Profesor: Gracia María
+Profesor: Garcia María
 
 Corte: 2025-3CR
