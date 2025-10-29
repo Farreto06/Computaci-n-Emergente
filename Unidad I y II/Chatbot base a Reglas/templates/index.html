@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chatbot simple</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <main class="chat-container">
+      <h1>Chatbot simple</h1>
+      <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px;">
+        <button id="show-messages">Mostrar mensajes</button>
+        <div id="available-messages" style="font-size:0.9em;color:#444"></div>
+      </div>
+      <div id="messages" class="messages"></div>
+      <form id="chat-form">
+        <input id="message-input" autocomplete="off" placeholder="Escribe 'hola'..." />
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <script>
+      const form = document.getElementById('chat-form');
+      const input = document.getElementById('message-input');
+      const messages = document.getElementById('messages');
+
+      function addMessage(text, cls='user'){
+        const el = document.createElement('div');
+        el.className = 'msg ' + cls;
+        el.textContent = text;
+        messages.appendChild(el);
+        messages.scrollTop = messages.scrollHeight;
+      }
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const text = input.value.trim();
+        if(!text) return;
+        addMessage(text, 'user');
+        input.value = '';
+
+        const res = await fetch('/chat', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({message: text})
+        });
+        const data = await res.json();
+        addMessage(data.reply, 'bot');
+      });
+
+      document.getElementById('show-messages').addEventListener('click', async () => {
+        const box = document.getElementById('available-messages');
+        box.textContent = 'Cargando...';
+        const res = await fetch('/messages');
+        const data = await res.json();
+        box.textContent = data.messages.join(', ');
+      });
+    </script>
+  </body>
+</html>
