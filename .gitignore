@@ -1,0 +1,39 @@
+# Entornos Virtuales
+# --------------------
+# Ignora el directorio del entorno virtual
+.env/
+
+# Directorios Generales
+# --------------------
+# Archivos de caché de Python
+__pycache__/
+
+# Compilados/Archivos Temporales
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de Jupyter/IPython Notebook Checkpoints
+.ipynb_checkpoints
+
+# IDEs/Editores (Opcional, pero recomendado)
+# ---------------------------------------------
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Archivos de configuración y bases de datos locales
+# ----------------------------------------------------
+# Si usas una base de datos local (ej. SQLite)
+db.sqlite3
+
+# Archivos de logs
+*.log
+
+# Archivos de datos sensibles/claves (Añade lo que sea necesario)
+# -----------------------------------------------------------------
+# Ejemplo de archivo de configuración con credenciales
+config.ini
+.env.secret
